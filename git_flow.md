@@ -1,18 +1,18 @@
 Since we have some problems with the current approach that we used, as a team we decided on changing our git process to use git-flow with some small adjustments to our needs.
 See git-flow explanation
 
-profis git-flow
+git-flow
 Basically, we will have two main branches, develop and master in our repository.
 
 Master always contains the production code that is currently running. Whenever we need to rollback production deployment or revert something from running production code, they need to be reflected on the master branch. It’s important since we don’t want to confuse with having different code bases on production instances and master branch.
 
-Develop branch is the base branch of new features. When you want to start to work on a new feature, it should be based on the develop branch. After code review, you can use preview environments and QA the ticket and then you can merge your feature branch into the develop. The convention for the feature branch name is feature + jira ticket number + small description, like feature/PRCORE-500-add-document-uploader
+Develop branch is the base branch of new features. When you want to start to work on a new feature, it should be based on the develop branch. After code review, you can use preview environments and QA the ticket and then you can merge your feature branch into the develop. The convention for the feature branch name is feature + jira ticket number + small description, like 
 
 
 
 
 
-core-api flow
+flow
 When we merge feature branches to develop branch, it’s going to be automatically deploy develop to check24-test environment.
 
 When we want to deploy to production, we need to create a new release branch from the current develop branch and trigger the production deployment with the release branch through charlie bot. After successfully deploying the release branch we finish it by merging it to the master and master to develop.
@@ -60,10 +60,9 @@ git checkout -b release/$(date +%Y%m%d)-1
 git push origin release/$(date +%Y%m%d)-1
 
 At this point, the release branch is ready to be deployed, release tag can be created.
-run profibot deploy core-api/release/20190322-1 to production
 
-Alternatively you can use the following command for profibot in slack directly.
-deploy core-api/release/20190322-1 to production
+
+
 
 Deploy release branch to production
 
@@ -92,7 +91,7 @@ git merge master
 git push origin develop
 
 If there are errors
-run profibot deploy master
+deploy master
 
 Release master branch.
 
