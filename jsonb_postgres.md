@@ -19,3 +19,9 @@ Pretty cool stuff from Postgres. I knew how to get data from the JSONB field, bu
 I just googled `using like on json fields + postgres`
 
 To write the query, I used this SO post: https://stackoverflow.com/questions/42918348/postgresql-json-like-query
+
+Please feel free to raise an issue if you felt this post needs more information.
+
+Cheers
+
+Vineeth
