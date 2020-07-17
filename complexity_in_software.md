@@ -26,9 +26,9 @@ The "todo" and "ongoing" for the business is indicated by the "in_progress" and 
 When querying for the data, we build a "large-ish" SQL query(not unmaintainable). and present it to our users.
 
 And now we come to the tickets model, where we needed something similar.
-With tickets, we have "TODO", "ONGOING" and "CLOSED"
+With tickets, we have "todo", "ongoing" and "closed"
 
-A ticket moves between the TODO and ONGOING states(open states), based on the "reminds_at" and "assigned_agent" values.
+A ticket moves between the todo and ongoing states(open states), based on the "reminds_at" and "assigned_agent" values.
 Each of these states are set and not calculated, based on user actions.
 
 For this, we have 12 different state transitions(7 ways to set them), based on different conditions, and a rake task that does one of these as well.
