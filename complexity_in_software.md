@@ -37,4 +37,4 @@ Even though introducing an extra state has simplified our queries, I think we ha
 
 Thus, we come back to my question, where does the complexity go to after we make our decisions.
 
-Foreword: I would have liked it the complexity lived in the querying part, and we had our ticket model store only `open` and `closed` as states instead of 3
+Afterword: I would have liked it the complexity lived in the querying part, and we had our ticket model store only `open` and `closed` as states instead of 3
