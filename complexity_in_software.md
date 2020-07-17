@@ -18,17 +18,17 @@ Tickets, Complaints and their management system.
 
 In the projects, we can see how both data models handle the statuses.
 
-In complaints, we have "pending", "in_progress" and "closed" in the DB, which,
+In complaints, we have `"pending"`, `"in_progress"` and `"closed"` in the DB, which,
 along with field "reminds_at" is used to represent the ticket statuses
-"pending", "todo", "ongoing" and "closed" for the business.
+`"pending"`, `"todo"`, `"ongoing"` and `"closed"` for the business.
 
-The "todo" and "ongoing" for the business is indicated by the "in_progress" and "reminds_at" fields in the DB.
+The `"todo"` and `"ongoing"` for the business is indicated by the `"in_progress"` and `"reminds_at"` fields in the DB.
 When querying for the data, we build a "large-ish" SQL query(not unmaintainable). and present it to our users.
 
 And now we come to the tickets model, where we needed something similar.
-With tickets, we have "todo", "ongoing" and "closed"
+With tickets, we have `"todo"`, `"ongoing"` and `"closed"`
 
-A ticket moves between the todo and ongoing states(open states), based on the "reminds_at" and "assigned_agent" values.
+A ticket moves between the todo and ongoing states(open states), based on the `"reminds_at"` and `"assigned_agent"` values.
 Each of these states are set and not calculated, based on user actions.
 
 For this, we have 12 different state transitions(7 ways to set them), based on different conditions, and a rake task that does one of these as well.
