@@ -1,5 +1,6 @@
 Here is the pull request template that we use during our application development(specific to github).
-It lives inside the `.github` directory of the project.
+It lives inside the `.github` directory of the project, the file should be named `pull_request_template.md`.
+And every time a PR is opened, this gets pre-filled.
 
 
 ``` markdown
