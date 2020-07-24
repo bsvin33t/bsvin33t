@@ -1,7 +1,5 @@
 # Vineeth Sathish
 
-As you see the heading, that's my name.
-
 I want to write, I try to write, but it is so hard(insert Michael Scott's quote). 
 
 I collect my thoughts here: [link](https://github.com/bsvin33t/bsvin33t)
