@@ -11,3 +11,5 @@ file = AttachmentUploader.data_uri(
   filename: file_name
 )
 ```
+
+If images are to be attached inline, in an email, this is a neat technique too!
