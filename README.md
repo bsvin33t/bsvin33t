@@ -19,3 +19,17 @@ Game of life in ruby and shoes: [link](https://github.com/bsvin33t/shoes-game-of
 
 
 Thanks for visiting my profile.
+
+
+### Index:
+
+[A case against default scope](https://github.com/bsvin33t/bsvin33t/blob/master/a_case_against_default_scope.md)
+
+[A case against exceptions](https://github.com/bsvin33t/bsvin33t/blob/master/a_case_against_exceptions.md)
+
+[A case against polymorphic associations](https://github.com/bsvin33t/bsvin33t/blob/master/a_case_against_polymorphic_association.md)
+
+[A case against side effects](https://github.com/bsvin33t/bsvin33t/blob/master/a_case_against_side_effects.md)
+
+[A case for multiple tables against polymorphic associated table](https://github.com/bsvin33t/bsvin33t/blob/master/a_case_for_multiple_tables_against_polymorphic_associated_table.md)
+
