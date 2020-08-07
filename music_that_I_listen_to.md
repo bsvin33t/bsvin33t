@@ -8,6 +8,7 @@
 |Mahavishnu Orchestra|Unreleased Tracks From Between Nothingness & Eternity| Man! These guys are really good. It is always a pleasure to listen to John Mclaughlin and his team
 |Aphex Twin|Selected Ambient Works 85-92| Great ambient electro music!
 |Porcupine Tree|In Absentia| Nice progressive work, rock-ish.
+|Pat Metheny |Still Life (Talking)| Fav track: Last train home. Found it via JOJO's bizarre adventure
 
 
 I also feel it just can not go wrong when you listen to artists live. All the songs that they choose to play live is going to be pretty amazing. Especially, if the songs are from the albums that I like.
