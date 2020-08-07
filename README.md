@@ -33,3 +33,5 @@ Thanks for visiting my profile.
 
 [A case for multiple tables against polymorphic associated table](https://github.com/bsvin33t/bsvin33t/blob/master/a_case_for_multiple_tables_against_polymorphic_associated_table.md)
 
+[GraphQl schema validation](https://github.com/bsvin33t/bsvin33t/blob/master/graphql_schema_validation.md)
+
