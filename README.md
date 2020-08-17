@@ -35,3 +35,5 @@ Thanks for visiting my profile.
 
 [GraphQl schema validation](https://github.com/bsvin33t/bsvin33t/blob/master/graphql_schema_validation.md)
 
+[On calculating the value of Pi](https://github.com/bsvin33t/bsvin33t/blob/master/on_calculating_pi.md)
+
