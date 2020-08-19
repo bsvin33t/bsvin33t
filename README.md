@@ -33,6 +33,14 @@ Thanks for visiting my profile.
 
 [A case for multiple tables against polymorphic associated table](https://github.com/bsvin33t/bsvin33t/blob/master/a_case_for_multiple_tables_against_polymorphic_associated_table.md)
 
+[A case against side effects](https://github.com/bsvin33t/bsvin33t/blob/master/a_case_against_side_effects.md)
+
+[A case for email scalar in graphql](https://github.com/bsvin33t/bsvin33t/blob/master/a_case_for_email_graphql_scalar.md)
+
+[Thoughts on activerecord import](https://github.com/bsvin33t/bsvin33t/blob/master/activerecord_import.md)
+
+[Pre and Post in clojure](https://github.com/bsvin33t/bsvin33t/blob/master/clojure-pre-post.md)
+
 [GraphQl schema validation](https://github.com/bsvin33t/bsvin33t/blob/master/graphql_schema_validation.md)
 
 [On calculating the value of Pi](https://github.com/bsvin33t/bsvin33t/blob/master/on_calculating_pi.md)
