@@ -71,3 +71,6 @@ Why was this an issue? We were downloading an email file from S3 to show the sub
 With the degraded S3, the downloads were slower and the entire thing to time out was taking some 60 seconds.
 This caused the requests to be queued up and eventually, brought our system to its knees.
 How did we fix this? We just went and changed the NGINX configuration to time out at 30 seconds, as we didn't want to muddy our codebase with a timeout block.
+
+
+We use `HTTP` gem or the `Down` gem instead of the `URI.open` because of the smaller memory footprint.
