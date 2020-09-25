@@ -66,3 +66,8 @@ I, instead of duplicating the code, reused it with a bit of extension, that was 
 This caused problems for the users, they were unable to create matches.
 I discussed this with my team lead, we came to the conclusion that, when external facing APIs are to be used internally, even if they are similar, we will create a different one. Duplication is ok. The users of the APIs have to be informed about the change.
 
+A day ago, we had our backoffice app crashing. We figured the reason. It was because of the degraded service provided by S3.
+Why was this an issue? We were downloading an email file from S3 to show the subject in our api.
+With the degraded S3, the downloads were slower and the entire thing to time out was taking some 60 seconds.
+This caused the requests to be queued up and eventually, brought our system to its knees.
+How did we fix this? We just went and changed the NGINX configuration to time out at 30 seconds, as we didn't want to muddy our codebase with a timeout block.
