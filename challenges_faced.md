@@ -72,5 +72,6 @@ With the degraded S3, the downloads were slower and the entire thing to time out
 This caused the requests to be queued up and eventually, brought our system to its knees.
 How did we fix this? We just went and changed the NGINX configuration to time out at 30 seconds, as we didn't want to muddy our codebase with a timeout block.
 
-
 We use `HTTP` gem or the `Down` gem instead of the `URI.open` because of the smaller memory footprint.
+
+Default encoding of `HTTP` gem is binary. This is intentional. But if the response from it is supposed to be downloaded and rendered via a controller, asking the gem to encode it as `UTF-8` when downloading it is a better way to go.
