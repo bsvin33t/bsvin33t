@@ -23,3 +23,6 @@ I finished it with python and got in.
 
 TLDR: First company got it on to me.
 
+Favorite language:
+Why?
+What flaws does it have?
