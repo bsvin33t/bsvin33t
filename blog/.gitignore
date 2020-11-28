@@ -1,0 +1,7 @@
+_site
+_posts
+about.markdown
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

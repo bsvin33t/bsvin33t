@@ -1,0 +1,30 @@
+name: Ruby
+
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the markdown blog related files
+        uses: actions/checkout@v2
+        with:
+          repository: bsvin33t/bsvin33t
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+      - name: Install dependencies
+        run: cd blog; bundle install
+      - name: Build blog posts
+        run: cd blog; bundle exec rake
+      - name: Create static files
+        run: cd blog; bundle exec jekyll build
+      - name: Push the static files to the blogging repository
+        run: |
+          cd blog/_site; git init; \
+          git remote add origin \
+          https://${{secrets.USERNAME}}:${{secrets.TOKEN}}@github.com/bsvin33t/bsvin33t.github.com.git; \
+          git add .; git commit -m $(date +%Y%m%d)
+          git pull origin master -s recursive -X ours --rebase; \
+          git push origin master
+
