@@ -16,12 +16,12 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('../../blog/Gemfile.lock') }}
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
       - name: Install dependencies
         run: |
-          bundle config path vendor/bundle
+          cd blog; bundle config path vendor/bundle;
           bundle install --jobs 4 --retry 3
       - name: Build blog posts
         run: cd blog; bundle exec rake
@@ -37,4 +37,3 @@ jobs:
           git add .; git commit -m $(date +%Y%m%d)
           git pull origin master -s recursive -X ours --rebase; \
           git push origin master
-
