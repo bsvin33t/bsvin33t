@@ -13,8 +13,16 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
       - name: Install dependencies
-        run: cd blog; bundle install
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
       - name: Build blog posts
         run: cd blog; bundle exec rake
       - name: Create static files
@@ -22,6 +30,8 @@ jobs:
       - name: Push the static files to the blogging repository
         run: |
           cd blog/_site; git init; \
+          git config --global user.name "Vineeth";\
+          git config --global user.email "bsvin33t@gmail.com";\
           git remote add origin \
           https://${{secrets.USERNAME}}:${{secrets.TOKEN}}@github.com/bsvin33t/bsvin33t.github.com.git; \
           git add .; git commit -m $(date +%Y%m%d)
