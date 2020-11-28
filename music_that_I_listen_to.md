@@ -10,6 +10,11 @@
 |Porcupine Tree|In Absentia| Nice progressive work, rock-ish.
 |Pat Metheny |Still Life (Talking)| Fav track: Last train home. Found it via JOJO's bizarre adventure
 |Run The Jewels |Self-titled album| All of them!
+|Grateful Dead |American Beauty | Upbeat
+|Greatful Dead |In The Dark | Nice jazz-rock sound with a sprinkle of psychedelia
+|Cotumo |https://soundcloud.com/cotumo | Berlin style techno
+|Supertramp | Breakfast In America (Deluxe Edition)| 
+|Giorgio Moroder | Midnight Express| Disco Disco Disco
 
 
 I also feel it just can not go wrong when you listen to artists live. All the songs that they choose to play live is going to be pretty amazing. Especially, if the songs are from the albums that I like.

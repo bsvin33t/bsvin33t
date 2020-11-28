@@ -8,6 +8,8 @@ In progress summary of TDD by example: [link](https://github.com/bsvin33t/tdd_by
 
 In progress symmary of SICP: [link](https://github.com/bsvin33t/sicp-notes)
 
+Here is a general view about different things that I collect during work: [link](https://github.com/bsvin33t/bsvin33t/blob/master/challenges_faced.md)
+
 
 Random Projects:
 
@@ -44,4 +46,3 @@ Thanks for visiting my profile.
 [GraphQl schema validation](https://github.com/bsvin33t/bsvin33t/blob/master/graphql_schema_validation.md)
 
 [On calculating the value of Pi](https://github.com/bsvin33t/bsvin33t/blob/master/on_calculating_pi.md)
-
