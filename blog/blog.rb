@@ -30,14 +30,12 @@ class Post
   private
 
   def file_content
-    @file_content ||= begin
-      "---\n"\
+    "---\n"\
       "#{LAYOUT}\n"\
       "title: \"#{title.titleize}\"\n"\
       "date: #{created_at}\n"\
       "---\n"\
       "#{file.read}\n"
-    end
   end
 
   def file_name
@@ -54,14 +52,12 @@ class Page < Post
   OUTPUT_DIR = "."
 
   def file_content
-    @file_content ||= begin
-      "---\n"\
+    "---\n"\
       "#{LAYOUT}\n"\
       "title: \"#{file_basename.titleize}\"\n"\
       "permalink: /#{file_basename}/\n"\
       "---\n"\
       "#{file.read}\n"
-    end
   end
 
   def file_name
