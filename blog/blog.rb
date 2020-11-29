@@ -17,7 +17,7 @@ class Post
     @file_basename = File.basename(file_path, ".md")
     @title = @file_basename.humanize
     @categories = CATEGORIES
-    @created_at = File.ctime(file_path)
+    @created_at = File.mtime(file_path)
   end
 
   def write
