@@ -33,7 +33,7 @@ jobs:
           git config --global user.name "Vineeth";\
           git config --global user.email "bsvin33t@gmail.com";\
           git remote add origin \
+          git fetch; git rm -r *
           https://${{secrets.USERNAME}}:${{secrets.TOKEN}}@github.com/bsvin33t/bsvin33t.github.com.git; \
-          git add .; git commit -m $(date +%Y%m%d)
-          git pull origin master -s recursive -X ours --rebase; \
-          git push origin master
+          git add .; git commit -m $(date +%Y%m%d); \
+          git push origin master -f
