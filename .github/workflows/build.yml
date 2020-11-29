@@ -34,6 +34,6 @@ jobs:
           git config --global user.email "bsvin33t@gmail.com";\
           git remote add origin \
           https://${{secrets.USERNAME}}:${{secrets.TOKEN}}@github.com/bsvin33t/bsvin33t.github.com.git; \
-          git fetch; git rm -r *
+          git fetch; git rm -r *; \
           git add .; git commit -m $(date +%Y%m%d); \
           git push origin master -f
