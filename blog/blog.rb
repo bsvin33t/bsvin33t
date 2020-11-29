@@ -1,9 +1,9 @@
 require "active_support/inflector"
 require "date"
 
-DIR_NAME = "bsvin33t"
+DIR_NAME = "../"
 PAGE_FILES = ["about"]
-IGNORED_FILES = ["readme"]
+IGNORED_FILES = ["README"]
 
 class Post
   LAYOUT = "layout: post"

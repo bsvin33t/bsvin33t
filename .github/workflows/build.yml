@@ -5,10 +5,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the markdown blog related files
-        uses: actions/checkout@v2
-        with:
-          repository: bsvin33t/bsvin33t
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
