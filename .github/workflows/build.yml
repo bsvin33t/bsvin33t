@@ -17,8 +17,8 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Install dependencies
         run: |
-          cd blog; bundle config path vendor/bundle;
-          bundle install --jobs 4 --retry 3
+          bundle config path vendor/bundle
+          cd blog; bundle install --jobs 4 --retry 3
       - name: Build blog posts
         run: cd blog; bundle exec rake
       - name: Create static files
