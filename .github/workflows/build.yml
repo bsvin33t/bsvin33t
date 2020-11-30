@@ -24,7 +24,7 @@ jobs:
           cd blog; bundle config path vendor/bundle;
           bundle install --jobs 4 --retry 3
       - name: Restore the time at which the blogposts were created
-        run: git ls-files | xargs -I{} git log -1 --date=format:%Y%m%d%H%M.%S --format='touch -t %ad "{}"' "{}" | $SHELL
+        run: git ls-files | xargs -I{} git log -1 --date=format:%Y%m%d%H%M.%S --format='touch -t %ad "{}"' "{}" | $SHELL; ls -la
       - name: Build blog posts
         run: cd blog; bundle exec rake
       - name: Create static files
