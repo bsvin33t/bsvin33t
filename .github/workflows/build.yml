@@ -14,7 +14,9 @@ jobs:
         with:
           ruby-version: 2.6
       - name: Restore the time at which the blogposts were created
-        run: git ls-files | xargs -I{} git log -1 --date=format:%Y%m%d%H%M.%S --format='touch -t %ad "{}"' "{}" | $SHELL; ls -l
+        run: git ls-files | xargs -I{} git log -1 --date=format:%Y%m%d%H%M.%S --format='touch -t %ad "{}"' "{}"
+      - name: List all files
+        run: ls -l
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
