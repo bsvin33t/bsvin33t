@@ -13,10 +13,8 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
-      - name: Install git-restore-mtime
-        run: sudo apt install git-restore-mtime
       - name: Restore the time at which the blogposts were created
-        run:  git restore-mtime; ls -la
+        run: git ls-files | xargs -I{} git log -1 --date=format:%Y%m%d%H%M.%S --format='touch -t %ad "{}"' "{}" | $SHELL; ls -la
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
