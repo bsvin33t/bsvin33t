@@ -2,6 +2,8 @@
 
 I was browsing HN and I came across this blogpost which was encouraging businesses to buy instead of build. I found this comment to be insightful.
 
+-----
+
 One thing to pay close attention to when making a build v.s. buy decision is the impact that billing models will have on your usage of a tool.
 Take logging for example. If you buy a log aggregation platform like Splunk Cloud or Loggly the pricing is likely based on the quantity of data you ingest per day.
 
