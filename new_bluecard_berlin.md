@@ -1,10 +1,10 @@
 ### Blue card check.
 
 Recently I wanted to renew my bluecard. Being a resident of Berlin, it is near impossible to get an appointment at any point of the day. 
-Which is why, in tandem with `checklyhq`(a neat little site to do regression testing on your web applications), I wrote myself a tiny script which checks for appointments every 5 minutes.
+Which is why, in tandem with **checklyhq** (a neat little site to do regression testing on your web applications), I wrote myself a tiny script which checks for appointments every 5 minutes.
 And voilà, I was able to find an appointment the next day and I even submitted my documents yesterday(3rd).
 
-Here is the `playwright` script(sure there's better way to do this, but whaterver. I already spent half hour doing this, I didn't want to spend any time more):
+Here is the **playwright** script(sure there's better way to do this, but whaterver. I already spent half hour doing this, I didn't want to spend any time more):
 
 ```
 const { chromium } = require("playwright")
