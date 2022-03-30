@@ -1,0 +1,13 @@
+- 1 cup rava (semolina or sooji)
+- 1/2 cup sour curd
+- 3 to 4 chopped green chillies
+- Few chopped coriander leaves
+- Few chopped curry leaves
+- Few chopped cashew nuts
+- 1 tsp mustard seeds
+- 1 tsp chana dal
+- 3 to 4 tbsp water
+- 2 tbsp ghee
+- 1 packet of Eno(fruit salt)
+- Salt as required
+- Oil
